@@ -697,7 +697,7 @@ const Home: React.FC = () => {
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-brand-navy uppercase leading-tight border-l-4 md:border-l-8 border-brand-yellow pl-5 md:pl-8 py-2 tracking-tight">
                   Fuel our fight: every dollar helps us protect working
                   families, seniors, and farms. Your contribution powers our
-                  ability to communicate our message of affordability.
+                  ability to communicate our message of affordable.
                 </p>
               </div>
 
