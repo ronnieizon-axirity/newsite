@@ -223,7 +223,7 @@ const Home: React.FC = () => {
                 </span>
                 <div className="flex-grow flex items-center">
                   <h3 className={goldBoxTitleStyle}>
-                    Making Our Lives More Affordability
+                    Making Our Lives More Affordable
                   </h3>
                 </div>
                 <div className="h-2 w-16 md:w-20 bg-brand-navy mt-4 relative z-10"></div>
