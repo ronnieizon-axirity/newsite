@@ -150,12 +150,16 @@ const Home: React.FC = () => {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/4 pointer-events-none"></div>
         <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-stretch justify-between gap-0 lg:gap-12 w-full">
           <div className="w-full lg:w-1/2 text-white z-20 flex flex-col justify-center text-center lg:text-left pt-14 md:pt-20 lg:pt-0 pb-10 md:pb-16 lg:pb-0">
-            <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-5xl lg:text-6xl xl:text-[3.9rem] font-extrabold uppercase leading-[1.05] mb-6 md:mb-8 tracking-tight text-white">
+            <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-5xl lg:text-6xl xl:text-[3.9rem] font-extrabold uppercase leading-[1.05] mb-4 tracking-tight text-white">
               “I AM{" "}
               <span className="text-brand-yellow">RUNNING FOR CONGRESS</span> TO
               PROTECT WORKING FAMILIES AND SENIORS.” —{" "}
               <span className="text-brand-yellow">QUINCY BAREEBE</span>
             </h1>
+
+            <p className="text-lg md:text-xl lg:text-2xl font-black uppercase tracking-[0.1em] text-brand-yellow mb-8 animate-in fade-in slide-in-from-left-4 duration-700 delay-300">
+              Democratic Candidate for Maryland's 5th Congressional District
+            </p>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold uppercase tracking-widest text-white/90 mb-10 md:mb-12 border-l-4 border-brand-yellow pl-4 md:pl-6 leading-tight max-w-2xl mx-auto lg:mx-0 text-left">
               BRINGING AFFORDABILITY, MEDICARE, AND QUALITY HEALTHCARE TO THE
@@ -223,7 +227,7 @@ const Home: React.FC = () => {
                 </span>
                 <div className="flex-grow flex items-center">
                   <h3 className={goldBoxTitleStyle}>
-                    Making Our Lives More Affordable
+                    Making Our Lives More Affordabable
                   </h3>
                 </div>
                 <div className="h-2 w-16 md:w-20 bg-brand-navy mt-4 relative z-10"></div>
