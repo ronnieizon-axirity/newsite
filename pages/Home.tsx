@@ -145,7 +145,24 @@ const Home: React.FC = () => {
 
   return (
     <div className="animate-in fade-in duration-1000 overflow-x-hidden bg-white font-sans text-brand-navy">
-      {/* SECTION 1: HERO */}
+      {/* SECTION: VIDEO (MOVED TO TOP) */}
+      <section className="bg-white py-12 md:py-16 lg:py-20">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative w-full aspect-video shadow-[16px_16px_0px_0px_#203365] md:shadow-[24px_24px_0px_0px_#203365] border-2 md:border-4 border-brand-navy bg-black overflow-hidden group">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/tRg_OPTn0V4?autoplay=1&mute=1&rel=0&modestbranding=1"
+              title="Quincy Bareebe for Congress"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: HERO (MOVED TO SECOND) */}
       <section className="relative min-h-[550px] md:min-h-[600px] lg:min-h-[700px] flex items-stretch bg-brand-navy overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/4 pointer-events-none"></div>
         <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-stretch justify-between gap-0 lg:gap-12 w-full">
@@ -194,11 +211,11 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 2: GOLD BOXES (BAREEBE BLUEPRINT) */}
+      {/* SECTION: GOLD BOXES */}
       <section className="bg-white py-12 md:py-20 lg:py-28">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
-            {/* Box 1: Healthcare - Updated Title */}
+            {/* Box 1: Healthcare */}
             <Link
               to="/issues#protecting-families"
               className="group block relative transition-all duration-300 hover:-translate-y-2"
@@ -216,7 +233,7 @@ const Home: React.FC = () => {
               </div>
             </Link>
 
-            {/* Box 2: Affordability - Title Kept Same */}
+            {/* Box 2: Affordability */}
             <Link
               to="/issues#financial-stability"
               className="group block relative transition-all duration-300 hover:-translate-y-2"
@@ -234,7 +251,7 @@ const Home: React.FC = () => {
               </div>
             </Link>
 
-            {/* Box 3: Future - Updated Title */}
+            {/* Box 3: Future */}
             <Link
               to="/issues#strong-future"
               className="group block relative transition-all duration-300 hover:-translate-y-2"
@@ -252,23 +269,6 @@ const Home: React.FC = () => {
                 <div className="h-2 w-16 md:w-20 bg-brand-navy mt-4 relative z-10"></div>
               </div>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* NEW VIDEO SECTION: ENABLED AUTOPLAY */}
-      <section className="bg-white pb-12 md:pb-20 lg:pb-28">
-        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative w-full aspect-video shadow-[16px_16px_0px_0px_#203365] md:shadow-[24px_24px_0px_0px_#203365] border-2 md:border-4 border-brand-navy bg-black overflow-hidden group">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/tRg_OPTn0V4?autoplay=1&mute=1&rel=0&modestbranding=1"
-              title="Quincy Bareebe for Congress"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
           </div>
         </div>
       </section>
@@ -422,7 +422,6 @@ const Home: React.FC = () => {
                     {formData.message.length}/300
                   </span>
                 </div>
-                {/* Fixed invalid md:rows attribute */}
                 <textarea
                   name="message"
                   value={formData.message}
@@ -555,7 +554,6 @@ const Home: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* RESTORED: Conditional Address Info for Lawn Signs */}
                   {involvedOptions.yardSign && (
                     <div className="space-y-2 pt-4 animate-in slide-in-from-top-4 duration-300 border-t-2 border-brand-yellow/30">
                       <input
